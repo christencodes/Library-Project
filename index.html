@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Library Project</title>
+  </head>
+  <body>
+    <div id="book-modal">
+      <form class="new-book-form">
+        <label>
+          Title:
+          <input class="input-title" type="text" required />
+        </label>
+        <label>
+          Author:
+          <input class="input-author" type="text" required />
+        </label>
+        <label>
+          Pages:
+          <input class="input-pages" type="number" required />
+        </label>
+        <label>
+          ID:
+          <input class="input-id" type="number" required />
+        </label>
+        <input type="submit" class="submit-button" />
+      </form>
+    </div>
+
+    <div class="create-book">
+      <button class="add-book">➕📕</button>
+    </div>
+    <div class="library">
+      <div class="book">
+        <div class="book-info">
+          <h2 class="title"></h2>
+          <p class="author"></p>
+          <p class="pages"></p>
+          <p class="id"></p>
+        </div>
+        <button class="remove-book">❌</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
